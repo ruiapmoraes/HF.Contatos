@@ -16,5 +16,10 @@ namespace HF.Contatos
         {
             InitializeComponent();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Lista de Contatos 1.0.\nDesenvolvido por: Rui Moraes", "Sobre");
+        }
     }
 }
