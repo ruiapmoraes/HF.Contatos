@@ -55,13 +55,13 @@
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.peopleBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.contactIDSpinEdit = new DevExpress.XtraEditors.SpinEdit();
             this.nameTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.companyTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.telephoneTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.emailTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.clientCheckEdit = new DevExpress.XtraEditors.CheckEdit();
             this.lastCallDateEdit = new DevExpress.XtraEditors.DateEdit();
+            this.contactIDSpinEdit = new DevExpress.XtraEditors.TextEdit();
             contactIDLabel = new System.Windows.Forms.Label();
             nameLabel = new System.Windows.Forms.Label();
             companyLabel = new System.Windows.Forms.Label();
@@ -74,7 +74,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.peopleBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.peopleBindingNavigator)).BeginInit();
             this.peopleBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.contactIDSpinEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nameTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.companyTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.telephoneTextEdit.Properties)).BeginInit();
@@ -82,14 +81,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.clientCheckEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lastCallDateEdit.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lastCallDateEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.contactIDSpinEdit.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(266, 33);
+            this.pictureBox1.Location = new System.Drawing.Point(338, 42);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(209, 118);
+            this.pictureBox1.Size = new System.Drawing.Size(168, 97);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -141,7 +141,7 @@
             this.peopleBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.peopleBindingNavigator.Name = "peopleBindingNavigator";
             this.peopleBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.peopleBindingNavigator.Size = new System.Drawing.Size(497, 25);
+            this.peopleBindingNavigator.Size = new System.Drawing.Size(524, 25);
             this.peopleBindingNavigator.TabIndex = 1;
             this.peopleBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -180,14 +180,14 @@
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 15);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 6);
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -195,7 +195,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             // 
             // bindingNavigatorMoveLastItem
@@ -204,13 +204,13 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 6);
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorAddNewItem
             // 
@@ -218,7 +218,7 @@
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorAddNewItem.Text = "Add new";
             // 
             // bindingNavigatorDeleteItem
@@ -227,7 +227,7 @@
             this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
             this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // peopleBindingNavigatorSaveItem
@@ -235,38 +235,23 @@
             this.peopleBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.peopleBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("peopleBindingNavigatorSaveItem.Image")));
             this.peopleBindingNavigatorSaveItem.Name = "peopleBindingNavigatorSaveItem";
-            this.peopleBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 23);
+            this.peopleBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
             this.peopleBindingNavigatorSaveItem.Text = "Save Data";
             this.peopleBindingNavigatorSaveItem.Click += new System.EventHandler(this.peopleBindingNavigatorSaveItem_Click);
             // 
             // contactIDLabel
             // 
             contactIDLabel.AutoSize = true;
-            contactIDLabel.Location = new System.Drawing.Point(39, 170);
+            contactIDLabel.Location = new System.Drawing.Point(22, 51);
             contactIDLabel.Name = "contactIDLabel";
             contactIDLabel.Size = new System.Drawing.Size(61, 13);
             contactIDLabel.TabIndex = 2;
             contactIDLabel.Text = "Contact ID:";
             // 
-            // contactIDSpinEdit
-            // 
-            this.contactIDSpinEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.peopleBindingSource, "ContactID", true));
-            this.contactIDSpinEdit.EditValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.contactIDSpinEdit.Location = new System.Drawing.Point(106, 167);
-            this.contactIDSpinEdit.Name = "contactIDSpinEdit";
-            this.contactIDSpinEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.contactIDSpinEdit.Size = new System.Drawing.Size(369, 20);
-            this.contactIDSpinEdit.TabIndex = 3;
-            // 
             // nameLabel
             // 
             nameLabel.AutoSize = true;
-            nameLabel.Location = new System.Drawing.Point(39, 196);
+            nameLabel.Location = new System.Drawing.Point(22, 77);
             nameLabel.Name = "nameLabel";
             nameLabel.Size = new System.Drawing.Size(38, 13);
             nameLabel.TabIndex = 4;
@@ -275,15 +260,15 @@
             // nameTextEdit
             // 
             this.nameTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.peopleBindingSource, "Name", true));
-            this.nameTextEdit.Location = new System.Drawing.Point(106, 193);
+            this.nameTextEdit.Location = new System.Drawing.Point(89, 74);
             this.nameTextEdit.Name = "nameTextEdit";
-            this.nameTextEdit.Size = new System.Drawing.Size(369, 20);
+            this.nameTextEdit.Size = new System.Drawing.Size(189, 20);
             this.nameTextEdit.TabIndex = 5;
             // 
             // companyLabel
             // 
             companyLabel.AutoSize = true;
-            companyLabel.Location = new System.Drawing.Point(39, 222);
+            companyLabel.Location = new System.Drawing.Point(22, 103);
             companyLabel.Name = "companyLabel";
             companyLabel.Size = new System.Drawing.Size(54, 13);
             companyLabel.TabIndex = 6;
@@ -292,15 +277,15 @@
             // companyTextEdit
             // 
             this.companyTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.peopleBindingSource, "Company", true));
-            this.companyTextEdit.Location = new System.Drawing.Point(106, 219);
+            this.companyTextEdit.Location = new System.Drawing.Point(89, 100);
             this.companyTextEdit.Name = "companyTextEdit";
-            this.companyTextEdit.Size = new System.Drawing.Size(369, 20);
+            this.companyTextEdit.Size = new System.Drawing.Size(189, 20);
             this.companyTextEdit.TabIndex = 7;
             // 
             // telephoneLabel
             // 
             telephoneLabel.AutoSize = true;
-            telephoneLabel.Location = new System.Drawing.Point(39, 248);
+            telephoneLabel.Location = new System.Drawing.Point(22, 129);
             telephoneLabel.Name = "telephoneLabel";
             telephoneLabel.Size = new System.Drawing.Size(61, 13);
             telephoneLabel.TabIndex = 8;
@@ -309,15 +294,15 @@
             // telephoneTextEdit
             // 
             this.telephoneTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.peopleBindingSource, "Telephone", true));
-            this.telephoneTextEdit.Location = new System.Drawing.Point(106, 245);
+            this.telephoneTextEdit.Location = new System.Drawing.Point(89, 126);
             this.telephoneTextEdit.Name = "telephoneTextEdit";
-            this.telephoneTextEdit.Size = new System.Drawing.Size(369, 20);
+            this.telephoneTextEdit.Size = new System.Drawing.Size(189, 20);
             this.telephoneTextEdit.TabIndex = 9;
             // 
             // emailLabel
             // 
             emailLabel.AutoSize = true;
-            emailLabel.Location = new System.Drawing.Point(39, 274);
+            emailLabel.Location = new System.Drawing.Point(22, 155);
             emailLabel.Name = "emailLabel";
             emailLabel.Size = new System.Drawing.Size(35, 13);
             emailLabel.TabIndex = 10;
@@ -326,15 +311,15 @@
             // emailTextEdit
             // 
             this.emailTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.peopleBindingSource, "Email", true));
-            this.emailTextEdit.Location = new System.Drawing.Point(106, 271);
+            this.emailTextEdit.Location = new System.Drawing.Point(89, 152);
             this.emailTextEdit.Name = "emailTextEdit";
-            this.emailTextEdit.Size = new System.Drawing.Size(369, 20);
+            this.emailTextEdit.Size = new System.Drawing.Size(189, 20);
             this.emailTextEdit.TabIndex = 11;
             // 
             // clientLabel
             // 
             clientLabel.AutoSize = true;
-            clientLabel.Location = new System.Drawing.Point(39, 300);
+            clientLabel.Location = new System.Drawing.Point(22, 181);
             clientLabel.Name = "clientLabel";
             clientLabel.Size = new System.Drawing.Size(36, 13);
             clientLabel.TabIndex = 12;
@@ -343,16 +328,16 @@
             // clientCheckEdit
             // 
             this.clientCheckEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.peopleBindingSource, "Client", true));
-            this.clientCheckEdit.Location = new System.Drawing.Point(106, 297);
+            this.clientCheckEdit.Location = new System.Drawing.Point(89, 178);
             this.clientCheckEdit.Name = "clientCheckEdit";
             this.clientCheckEdit.Properties.Caption = "";
-            this.clientCheckEdit.Size = new System.Drawing.Size(369, 19);
+            this.clientCheckEdit.Size = new System.Drawing.Size(189, 19);
             this.clientCheckEdit.TabIndex = 13;
             // 
             // lastCallLabel
             // 
             lastCallLabel.AutoSize = true;
-            lastCallLabel.Location = new System.Drawing.Point(39, 325);
+            lastCallLabel.Location = new System.Drawing.Point(22, 206);
             lastCallLabel.Name = "lastCallLabel";
             lastCallLabel.Size = new System.Drawing.Size(50, 13);
             lastCallLabel.TabIndex = 14;
@@ -362,22 +347,37 @@
             // 
             this.lastCallDateEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.peopleBindingSource, "LastCall", true));
             this.lastCallDateEdit.EditValue = null;
-            this.lastCallDateEdit.Location = new System.Drawing.Point(106, 322);
+            this.lastCallDateEdit.Location = new System.Drawing.Point(89, 203);
             this.lastCallDateEdit.Name = "lastCallDateEdit";
             this.lastCallDateEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lastCallDateEdit.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lastCallDateEdit.Size = new System.Drawing.Size(369, 20);
+            this.lastCallDateEdit.Size = new System.Drawing.Size(189, 20);
             this.lastCallDateEdit.TabIndex = 15;
+            // 
+            // contactIDSpinEdit
+            // 
+            this.contactIDSpinEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.peopleBindingSource, "ContactID", true));
+            this.contactIDSpinEdit.EditValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.contactIDSpinEdit.Enabled = false;
+            this.contactIDSpinEdit.Location = new System.Drawing.Point(89, 48);
+            this.contactIDSpinEdit.Name = "contactIDSpinEdit";
+            this.contactIDSpinEdit.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Buffered;
+            this.contactIDSpinEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.contactIDSpinEdit.Size = new System.Drawing.Size(71, 20);
+            this.contactIDSpinEdit.TabIndex = 3;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(497, 379);
+            this.ClientSize = new System.Drawing.Size(524, 267);
             this.Controls.Add(contactIDLabel);
-            this.Controls.Add(this.contactIDSpinEdit);
             this.Controls.Add(nameLabel);
             this.Controls.Add(this.nameTextEdit);
             this.Controls.Add(companyLabel);
@@ -392,6 +392,7 @@
             this.Controls.Add(this.lastCallDateEdit);
             this.Controls.Add(this.peopleBindingNavigator);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.contactIDSpinEdit);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Use a Cabeça - Contatos";
@@ -402,7 +403,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.peopleBindingNavigator)).EndInit();
             this.peopleBindingNavigator.ResumeLayout(false);
             this.peopleBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.contactIDSpinEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nameTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.companyTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.telephoneTextEdit.Properties)).EndInit();
@@ -410,6 +410,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.clientCheckEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lastCallDateEdit.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lastCallDateEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.contactIDSpinEdit.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -435,13 +436,13 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton peopleBindingNavigatorSaveItem;
-        private DevExpress.XtraEditors.SpinEdit contactIDSpinEdit;
         private DevExpress.XtraEditors.TextEdit nameTextEdit;
         private DevExpress.XtraEditors.TextEdit companyTextEdit;
         private DevExpress.XtraEditors.TextEdit telephoneTextEdit;
         private DevExpress.XtraEditors.TextEdit emailTextEdit;
         private DevExpress.XtraEditors.CheckEdit clientCheckEdit;
         private DevExpress.XtraEditors.DateEdit lastCallDateEdit;
+        private DevExpress.XtraEditors.TextEdit contactIDSpinEdit;
     }
 }
 
